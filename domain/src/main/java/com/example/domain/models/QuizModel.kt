@@ -7,6 +7,7 @@ data class QuizModel(
     val answers: AnswersModel,
     val multipleCorrectAnswer: Boolean,
     val correctAnswers: CorrectModel,
+    val explanation: String,
     val tip: String? = null,
     val category: String,
     val difficulty: String

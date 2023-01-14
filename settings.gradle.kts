@@ -13,7 +13,8 @@ dependencyResolutionManagement {
     }
 }
 rootProject.name = "QuizApi"
-include (":app")
+include(":app")
 include(":data")
 include(":domain")
 include(":common")
+include(":presentation")

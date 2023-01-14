@@ -16,6 +16,8 @@ data class QuizDto(
     val multipleCorrectAnswer: Boolean,
     @SerializedName("correct_answers")
     val correctAnswers: CorrectDto,
+    @SerializedName("explanation")
+    val explanation: String,
     @SerializedName("tip")
     val tip: String? = null,
     @SerializedName("category")
@@ -31,6 +33,7 @@ fun QuizDto.toDomain() = QuizModel(
     answers = answers.toDomain(),
     multipleCorrectAnswer = multipleCorrectAnswer,
     correctAnswers = correctAnswers.toDomain(),
+    explanation = explanation,
     tip = tip,
     category = category,
     difficulty = difficulty
