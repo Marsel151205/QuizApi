@@ -3,13 +3,15 @@ object Version {
     const val lifecycle = "2.5.1"
     const val hilt = "2.44"
     const val navigation = "2.5.3"
+    const val saveArgs = "2.5.3"
 }
 
 object Plugins {
     const val application = "com.android.application"
     const val kotlinAndroid = "org.jetbrains.kotlin.android"
     const val hilt = "com.google.dagger.hilt.android"
-    const val kapt = "kapt"
+    const val saveArgs = "androidx.navigation.safeargs"
+    const val kapt = "kotlin-kapt"
 }
 
 object Dependencies {
@@ -39,12 +41,14 @@ object Dependencies {
     }
 
     object ViewBindingPropertyDelegate {
-        const val viewBindingPropertyDelegate = "com.github.kirich1409:viewbindingpropertydelegate-noreflection:1.5.6"
+        const val viewBindingPropertyDelegate =
+            "com.github.kirich1409:viewbindingpropertydelegate-noreflection:1.5.6"
     }
 
     object Lifecycle {
         const val viewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Version.lifecycle}"
-        const val viewModelCompose = "androidx.lifecycle:lifecycle-viewmodel-compose:${Version.lifecycle}"
+        const val viewModelCompose =
+            "androidx.lifecycle:lifecycle-viewmodel-compose:${Version.lifecycle}"
         const val liveData = "androidx.lifecycle:lifecycle-livedata-ktx:${Version.lifecycle}"
     }
 
@@ -58,7 +62,8 @@ object Dependencies {
     }
 
     object NavComponents {
-        const val navigationFragment = "androidx.navigation:navigation-fragment-ktx:${Version.navigation}"
+        const val navigationFragment =
+            "androidx.navigation:navigation-fragment-ktx:${Version.navigation}"
         const val navigationUI = "androidx.navigation:navigation-ui-ktx:${Version.navigation}"
     }
 

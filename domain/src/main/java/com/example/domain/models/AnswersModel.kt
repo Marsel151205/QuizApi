@@ -1,10 +1,10 @@
 package com.example.domain.models
 
 data class AnswersModel(
-    val answersA: String? = null,
-    val answersB: String? = null,
-    val answersC: String? = null,
-    val answersD: String? = null,
+    val answerA: String? = null,
+    val answerB: String? = null,
+    val answerC: String? = null,
+    val answerD: String? = null,
     val answerE: String? = null,
-    val answersF: String? = null
+    val answerF: String? = null
 )

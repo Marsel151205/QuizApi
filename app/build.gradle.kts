@@ -1,7 +1,7 @@
 plugins {
     id(Plugins.application)
-    id("org.jetbrains.kotlin.android")
-    kotlin(Plugins.kapt)
+    id(Plugins.kotlinAndroid)
+    id(Plugins.kapt)
     id(Plugins.hilt)
 }
 
@@ -35,7 +35,7 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
-    buildFeatures{
+    buildFeatures {
         viewBinding = true
     }
 }
@@ -45,9 +45,6 @@ dependencies {
     // Core
     implementation(Dependencies.Core.core)
 
-    // Domain
-    implementation(project(":domain"))
-
     // Hilt
     implementation(Dependencies.Hilt.hilt)
     kapt(Dependencies.Hilt.compiler)
@@ -55,6 +52,10 @@ dependencies {
     // Coroutines
     implementation(Dependencies.Coroutines.coroutineAndroid)
     implementation(Dependencies.Coroutines.coroutineCore)
+
+
+    // Presentation
+    implementation(project(":presentation"))
 
     // Domain
     implementation(project(":domain"))

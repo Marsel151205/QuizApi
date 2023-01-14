@@ -6,5 +6,9 @@ import kotlinx.coroutines.flow.Flow
 
 interface QuestionsRepository {
 
-    fun getQuestions(): Flow<Either<String, QuizModel>>
+    fun getQuestions(difficulty: String): Flow<Either<String, QuizModel>>
+
+    fun getBalls(): Int
+
+    fun setBalls(count: Int)
 }

@@ -2,9 +2,11 @@
 plugins {
     id(Plugins.application) version Version.applicationAndKotlinAndroid apply false
     id("com.android.library") version Version.applicationAndKotlinAndroid apply false
-    id("org.jetbrains.kotlin.android") version "1.7.20" apply false
+    id(Plugins.kotlinAndroid) version "1.7.20" apply false
 
     // Hilt
     id(Plugins.hilt) version Version.hilt apply false
-    id("org.jetbrains.kotlin.jvm") version "1.7.20" apply false
+
+    // Navigation Safe args
+    id(Plugins.saveArgs) version Version.saveArgs apply false
 }

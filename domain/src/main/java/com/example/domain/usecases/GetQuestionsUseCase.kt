@@ -7,5 +7,5 @@ class GetQuestionsUseCase @Inject constructor(
     private val questionsRepository: QuestionsRepository
 ) {
 
-    fun invoke() = questionsRepository.getQuestions()
+    operator fun invoke(difficulty: String) = questionsRepository.getQuestions(difficulty)
 }
